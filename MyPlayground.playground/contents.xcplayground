@@ -4,5 +4,6 @@
         <page name='ArrayParametro'/>
         <page name='PrimeirasAulas'/>
         <page name='ClassesInstanciasObjetos'/>
+        <page name='NuncaQuebramComNulos'/>
     </pages>
 </playground>
