@@ -1,0 +1,6 @@
+framework module Pods_DependenciesCocoaPods {
+  umbrella header "Pods-DependenciesCocoaPods-umbrella.h"
+
+  export *
+  module * { export * }
+}
