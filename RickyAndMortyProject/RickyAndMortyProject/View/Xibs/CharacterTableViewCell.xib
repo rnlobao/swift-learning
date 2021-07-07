@@ -12,49 +12,47 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="86" id="KGk-i7-Jjw" customClass="CharacterTableViewCell" customModule="RickyAndMortyProject" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="368" height="86"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="368" height="86"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bln-fi-Ifi">
-                        <rect key="frame" x="16" y="16" width="60" height="60"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bln-fi-Ifi">
+                        <rect key="frame" x="36" y="13" width="60" height="60"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="60" id="7re-I6-cTK"/>
-                            <constraint firstAttribute="width" constant="60" id="CuM-f6-Gsh"/>
+                            <constraint firstAttribute="width" constant="60" id="7Wm-IA-QfH"/>
+                            <constraint firstAttribute="height" constant="60" id="mAY-V8-6YD"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsc-QI-4wh">
-                        <rect key="frame" x="92" y="16" width="42" height="21"/>
+                        <rect key="frame" x="112" y="16" width="220" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2HP-c4-OOl">
-                        <rect key="frame" x="92" y="45" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7f-B1-tDN">
+                        <rect key="frame" x="112" y="44.5" width="220" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="zsc-QI-4wh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="GEB-FH-yxO"/>
-                    <constraint firstItem="2HP-c4-OOl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="NKu-oY-hbG"/>
-                    <constraint firstAttribute="bottom" secondItem="zsc-QI-4wh" secondAttribute="bottom" constant="16" id="OqE-27-fxq"/>
-                    <constraint firstItem="Bln-fi-Ifi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="RJi-Hw-dmt"/>
-                    <constraint firstItem="2HP-c4-OOl" firstAttribute="leading" secondItem="Bln-fi-Ifi" secondAttribute="trailing" constant="16" id="WMA-TG-hMv"/>
-                    <constraint firstItem="2HP-c4-OOl" firstAttribute="leading" secondItem="zsc-QI-4wh" secondAttribute="trailing" constant="16" id="YOS-nA-BU1"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="2HP-c4-OOl" secondAttribute="trailing" constant="16" id="YPD-xO-SL6"/>
-                    <constraint firstItem="zsc-QI-4wh" firstAttribute="leading" secondItem="Bln-fi-Ifi" secondAttribute="trailing" constant="16" id="hwc-bK-uL9"/>
-                    <constraint firstAttribute="bottom" secondItem="Bln-fi-Ifi" secondAttribute="bottom" constant="16" id="hxj-Zo-W2H"/>
-                    <constraint firstItem="zsc-QI-4wh" firstAttribute="top" secondItem="Bln-fi-Ifi" secondAttribute="top" id="kgP-Nt-glq"/>
-                    <constraint firstItem="Bln-fi-Ifi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="yjN-da-tjq"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="h7f-B1-tDN" secondAttribute="trailing" constant="16" id="3kg-Dc-Dqr"/>
+                    <constraint firstItem="Bln-fi-Ifi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="16" id="5oK-Ut-uYM"/>
+                    <constraint firstItem="Bln-fi-Ifi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="16" id="8XL-Xs-DVp"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Bln-fi-Ifi" secondAttribute="bottom" constant="16" id="F2o-hP-gqQ"/>
+                    <constraint firstItem="h7f-B1-tDN" firstAttribute="leading" secondItem="Bln-fi-Ifi" secondAttribute="trailing" constant="16" id="Fzf-yp-Jqd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="zsc-QI-4wh" secondAttribute="trailing" constant="16" id="G3M-bO-ijp"/>
+                    <constraint firstItem="h7f-B1-tDN" firstAttribute="top" secondItem="zsc-QI-4wh" secondAttribute="bottom" constant="8" id="Gcy-WZ-Yem"/>
+                    <constraint firstItem="zsc-QI-4wh" firstAttribute="leading" secondItem="Bln-fi-Ifi" secondAttribute="trailing" constant="16" id="L6D-ml-dmZ"/>
+                    <constraint firstItem="zsc-QI-4wh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Zms-CQ-d3r"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="especieLabel" destination="2HP-c4-OOl" id="ZKg-IK-tjc"/>
                 <outlet property="iconImageView" destination="Bln-fi-Ifi" id="VtC-Ii-vnJ"/>
                 <outlet property="nameLabel" destination="zsc-QI-4wh" id="30U-XW-C1D"/>
+                <outlet property="specieLabel" destination="h7f-B1-tDN" id="yVO-V8-TNZ"/>
             </connections>
             <point key="canvasLocation" x="102.89855072463769" y="102.45535714285714"/>
         </tableViewCell>
