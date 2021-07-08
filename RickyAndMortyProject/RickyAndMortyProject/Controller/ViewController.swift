@@ -22,20 +22,20 @@ class RickAndMortyViewController: UIViewController {
     func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UINib(nibName: xibName, bundle: Bundle.main), forCellReuseIdentifier: cellReuse)
+        tableView.register(UINib(nibName: xibName, bundle: Bundle.main), forCellReuseIdentifier: cellReuse) //reutilizar as celulas de forma a serem printadas varias vezes
     }
 }
 
 extension RickAndMortyViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10 //quantas vezes vai rodar a celular
+        return 10 //quantas vezes vai rodar a celula
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellReuse) as! CharacterTableViewCell
-        cell.setupCell(user: <#T##Character#>)
-        return cell //Ela fala qual celula ela vai exibir, no caso é o xib
+        cell.setupCell(user: )
+        return cell //Ela fala qual celula ela vai exibir, no caso é o xib e como vao ser suas configuracoes
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

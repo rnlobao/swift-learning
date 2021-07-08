@@ -8,5 +8,6 @@
 import Foundation
 
 class RickAndMortyViewModel {
+    //chama o service e retorna os dados
     
 }

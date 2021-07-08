@@ -5,6 +5,8 @@
 //  Created by Robson Novato Lobao on 06/07/21.
 //
 
+
+//aqui a gente tem a struct criada a partir do json requisitado na API
 import Foundation
 
 

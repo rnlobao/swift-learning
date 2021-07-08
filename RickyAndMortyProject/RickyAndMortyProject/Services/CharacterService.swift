@@ -5,6 +5,8 @@
 //  Created by Robson Novato Lobao on 06/07/21.
 //
 
+
+//esse arquivo seta o alamofire e faz o request na api do json (caso haja algo la)
 import Foundation
 import Alamofire
 
