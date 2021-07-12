@@ -34,7 +34,7 @@ extension RickAndMortyViewController: UITableViewDelegate,UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellReuse) as! CharacterTableViewCell
-        cell.setupCell(user: )
+        cell.setupCell(user: <#T##Character#>)
         return cell //Ela fala qual celula ela vai exibir, no caso é o xib e como vao ser suas configuracoes
     }
     

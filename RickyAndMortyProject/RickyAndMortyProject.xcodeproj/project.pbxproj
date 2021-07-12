@@ -87,7 +87,6 @@
 				9138F4DB2694DBC300CA2E3F /* View */,
 				9138F4DA2694DB9F00CA2E3F /* Controller */,
 				9138F4D92694DB8700CA2E3F /* Application */,
-				9138F4C72694D99600CA2E3F /* SceneDelegate.swift */,
 				9138F4CE2694D99700CA2E3F /* Assets.xcassets */,
 				9138F4D02694D99700CA2E3F /* LaunchScreen.storyboard */,
 				9138F4D32694D99700CA2E3F /* Info.plist */,
@@ -99,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				9138F4C52694D99600CA2E3F /* AppDelegate.swift */,
+				9138F4C72694D99600CA2E3F /* SceneDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";

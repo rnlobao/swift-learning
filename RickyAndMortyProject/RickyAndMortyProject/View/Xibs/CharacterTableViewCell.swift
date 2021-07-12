@@ -4,7 +4,8 @@
 //
 //  Created by Robson Novato Lobao on 06/07/21.
 //
-
+//aqui a gente cria a funcao setupCell que vai ser chamada depois na ViewController
+//essa funcao vai dar o a celula como tendo 2 labels com especie e nome e uma imagem carregada a partir do nuke com o loadImage
 import UIKit
 import Nuke
 
