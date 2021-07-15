@@ -13,6 +13,7 @@ fileprivate let xibName = "AlunosTableViewCell"
 class AlunosViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
     var viewModel : AlunosViewModel!
 
     
