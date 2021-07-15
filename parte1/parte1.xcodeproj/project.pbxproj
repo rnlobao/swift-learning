@@ -13,9 +13,10 @@
 		9130414826A07C7C0097266E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9130414626A07C7C0097266E /* Main.storyboard */; };
 		9130414A26A07C7D0097266E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9130414926A07C7D0097266E /* Assets.xcassets */; };
 		9130414D26A07C7D0097266E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9130414B26A07C7D0097266E /* LaunchScreen.storyboard */; };
-		9130415B26A07D5F0097266E /* AlunosResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9130415A26A07D5F0097266E /* AlunosResult.swift */; };
+		9130415B26A07D5F0097266E /* AlunoResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9130415A26A07D5F0097266E /* AlunoResult.swift */; };
 		9130415F26A07E900097266E /* AlunosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9130415E26A07E900097266E /* AlunosTableViewCell.swift */; };
 		9130416326A081F70097266E /* AlunosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9130416226A081F70097266E /* AlunosTableViewCell.xib */; };
+		91906ED726A0B3FC00E4A406 /* AlunosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91906ED626A0B3FC00E4A406 /* AlunosViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +28,10 @@
 		9130414926A07C7D0097266E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9130414C26A07C7D0097266E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9130414E26A07C7D0097266E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9130415A26A07D5F0097266E /* AlunosResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlunosResult.swift; sourceTree = "<group>"; };
+		9130415A26A07D5F0097266E /* AlunoResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlunoResult.swift; sourceTree = "<group>"; };
 		9130415E26A07E900097266E /* AlunosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlunosTableViewCell.swift; sourceTree = "<group>"; };
 		9130416226A081F70097266E /* AlunosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlunosTableViewCell.xib; sourceTree = "<group>"; };
+		91906ED626A0B3FC00E4A406 /* AlunosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlunosViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +64,10 @@
 		9130413F26A07C7C0097266E /* Parte1 */ = {
 			isa = PBXGroup;
 			children = (
-				9130415926A07CD30097266E /* Application */,
 				9130415826A07CCE0097266E /* Controller */,
 				9130415726A07CC80097266E /* View */,
 				9130415526A07CB40097266E /* Model */,
-				9130414026A07C7C0097266E /* AppDelegate.swift */,
-				9130414226A07C7C0097266E /* SceneDelegate.swift */,
-				9130414426A07C7C0097266E /* ViewController.swift */,
+				9130415926A07CD30097266E /* Application */,
 				9130414926A07C7D0097266E /* Assets.xcassets */,
 				9130414B26A07C7D0097266E /* LaunchScreen.storyboard */,
 				9130414E26A07C7D0097266E /* Info.plist */,
@@ -79,7 +78,7 @@
 		9130415526A07CB40097266E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9130415A26A07D5F0097266E /* AlunosResult.swift */,
+				9130415A26A07D5F0097266E /* AlunoResult.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -96,6 +95,8 @@
 		9130415826A07CCE0097266E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9130414426A07C7C0097266E /* ViewController.swift */,
+				91906ED626A0B3FC00E4A406 /* AlunosViewModel.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -103,6 +104,8 @@
 		9130415926A07CD30097266E /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				9130414026A07C7C0097266E /* AppDelegate.swift */,
+				9130414226A07C7C0097266E /* SceneDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -198,7 +201,8 @@
 				9130414526A07C7C0097266E /* ViewController.swift in Sources */,
 				9130415F26A07E900097266E /* AlunosTableViewCell.swift in Sources */,
 				9130414126A07C7C0097266E /* AppDelegate.swift in Sources */,
-				9130415B26A07D5F0097266E /* AlunosResult.swift in Sources */,
+				9130415B26A07D5F0097266E /* AlunoResult.swift in Sources */,
+				91906ED726A0B3FC00E4A406 /* AlunosViewModel.swift in Sources */,
 				9130414326A07C7C0097266E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,7 +13,7 @@ class AlunosTableViewCell: UITableViewCell {
     @IBOutlet weak var idadeLabel: UILabel!
     
     
-    func setupCell(user: Alunos) {
+    func setupCell(user: Aluno) {
             nomeLabel.text = user.nome ?? ""
             idadeLabel.text = user.idade ?? ""
         }
