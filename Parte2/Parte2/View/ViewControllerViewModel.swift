@@ -21,15 +21,21 @@ class ViewControllerViewModel {
     }
     
     func conferevalores(nome: String, idade: String, endereco: String, telefone: String) {
-        var resposta: String
-        if let nome = String?(nome) {
-            if(nome.count < 3) {
-                resposta = "O nome tem que ter no mínimo 3 strings"
-            }
-            else {
-                resposta = "Ok"
-            }
+        var resposta: String = "nada"
+        if (nome.count < 3) {
+            resposta = "O campo nome deve ter pelo menos 3 caracteres"
+            
         }
+        if (idade.isEmpty || nome.isEmpty || endereco.isEmpty || telefone.isEmpty) {
+            resposta = "Nenhum campo pode ficar vazio"
+        }
+        if (telefone.count < 8) {
+            resposta = "Campo telefone tem que ter no mínimo 8 carcteres"
+        }
+        else {
+            resposta = "Tudo certo"
+        }
+        
         delegate?.showConfere(confere: resposta)
     }
 }

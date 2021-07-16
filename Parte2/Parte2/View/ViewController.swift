@@ -8,14 +8,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var nomeTextField: UITextField!
     @IBOutlet weak var idadeTextField: UITextField!
     @IBOutlet weak var endereçoTextField: UITextField!
     @IBOutlet weak var telefoneTextField: UITextField!
-    
     @IBOutlet weak var actionButton: UIButton!
-    
+
+        
     var viewModel: ViewControllerViewModel?
 
     
@@ -25,14 +25,14 @@ class ViewController: UIViewController {
     }
 
     @IBAction func actionButton(_ sender: Any) {
-        viewModel?.conferevalores(nome: nomeTextField.text ?? "", idade: idadeTextField.text ?? "", endereco: endereçoTextField.text ?? "", telefone: telefoneTextField.text ?? "")
+        viewModel?.conferevalores(nome: nomeTextField.text ?? "", idade: idadeTextField.text ?? "", endereco: endereçoTextField.text ?? "", telefone: telefoneTextField.text ?? "") //?? "" siginfica que, se for nula manda vazio
         }
     }
 
-    extension ViewController: SumDelegate {
+    extension ViewController: ConfereDelegate {
         
-        func showSum(sum: Float) {
-            let alert = UIAlertController(title: "O resultado e: ", message: sum.description, preferredStyle: .alert)
+        func showConfere(confere: String) {
+            let alert = UIAlertController(title: "ATENÇÃO: ", message: confere.description, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .destructive, handler: nil))
             self.present(alert, animated: true)
         }
