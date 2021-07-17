@@ -25,16 +25,19 @@ class ViewController: UIViewController {
     }
 
     @IBAction func actionButton(_ sender: Any) {
-        viewModel?.conferevalores(nome: nomeTextField.text ?? "", idade: idadeTextField.text ?? "", endereco: endereçoTextField.text ?? "", telefone: telefoneTextField.text ?? "") //?? "" siginfica que, se for nula manda vazio
+        viewModel?.conferevalores(nome: nomeTextField.text ?? "", idade: idadeTextField.text ?? "", endereco: endereçoTextField.text ?? "", telefone: telefoneTextField.text ?? "")
+        //?? "" siginfica que, se for nula manda vazio
         }
     }
 
     extension ViewController: ConfereDelegate {
         
         func showConfere(confere: String) {
-            let alert = UIAlertController(title: "ATENÇÃO: ", message: confere.description, preferredStyle: .alert)
+            let alert = UIAlertController(title: "ATENÇÃO:", message: confere.description, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .destructive, handler: nil))
             self.present(alert, animated: true)
+            
+            
         }
     }
 
