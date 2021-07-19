@@ -9,7 +9,7 @@ import Foundation
 
 
 protocol ConfereDelegate {
-    func showConfere(confere: String)
+    func showConfere(confere: String, success: Bool)
 }
 
 class ViewControllerViewModel {
@@ -36,8 +36,10 @@ class ViewControllerViewModel {
         }
         if (nome.count >= 3 && !idade.isEmpty && !nome.isEmpty && !endereco.isEmpty && !telefone.isEmpty && telefone.count >= 8 && telefone.isInt) {
             resposta = "Tudo certo"
+            
         }
-        delegate?.showConfere(confere: resposta)
+        
+        delegate?.showConfere(confere: resposta, success: resposta == "Tudo certo")
     }
 }
 

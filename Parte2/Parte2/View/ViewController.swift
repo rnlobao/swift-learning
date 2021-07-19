@@ -32,12 +32,16 @@ class ViewController: UIViewController {
 
     extension ViewController: ConfereDelegate {
         
-        func showConfere(confere: String) {
+        func showConfere(confere: String, success: Bool) {
             let alert = UIAlertController(title: "ATENÇÃO:", message: confere.description, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: .destructive, handler: nil))
+            alert.addAction(UIAlertAction(title: success ? "Salvar":"Ok", style: .destructive, handler: nil))
+            if (success == true) {
+                nomeTextField.text?.removeAll()
+                idadeTextField.text?.removeAll()
+                endereçoTextField.text?.removeAll()
+                telefoneTextField.text?.removeAll()
+            }
             self.present(alert, animated: true)
-            
-            
         }
     }
 
