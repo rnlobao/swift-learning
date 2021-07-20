@@ -34,12 +34,17 @@ class ViewController: UIViewController {
         
         func showConfere(confere: String, success: Bool) {
             let alert = UIAlertController(title: "ATENÇÃO:", message: confere.description, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: success ? "Salvar":"Ok", style: .destructive, handler: nil))
+            if (success == false) {
+                alert.addAction(UIAlertAction(title: "Ok", style: .destructive, handler: nil))
+            }
             if (success == true) {
-                nomeTextField.text?.removeAll()
-                idadeTextField.text?.removeAll()
-                endereçoTextField.text?.removeAll()
-                telefoneTextField.text?.removeAll()
+                alert.addAction(UIAlertAction(title: "Salvar", style: UIAlertAction.Style.default, handler: {(action:UIAlertAction!) in
+                        self.nomeTextField.text?.removeAll()
+                        self.idadeTextField.text?.removeAll()
+                        self.endereçoTextField.text?.removeAll()
+                        self.telefoneTextField.text?.removeAll()
+                    }))
+                
             }
             self.present(alert, animated: true)
         }
