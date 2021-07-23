@@ -25,7 +25,7 @@ class UsersViewController: UIViewController {
     }
     
     func setupTableView() {
-        tableView.separatorStyle = .none
+        //tableView.separatorStyle = .none
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: xibName, bundle: Bundle.main), forCellReuseIdentifier: cellReuse) //reutilizar as celulas de forma a serem printadas varias vezes

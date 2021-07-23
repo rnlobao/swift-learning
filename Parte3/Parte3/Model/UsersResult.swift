@@ -17,7 +17,7 @@ struct UsersResult: Codable {
 // MARK: - Datum
 struct Datum: Codable {
     let id: Int?
-    let email, firstName, lastName: String?
+    let email, first_name, lastName: String?
     let avatar: String?
 }
 
