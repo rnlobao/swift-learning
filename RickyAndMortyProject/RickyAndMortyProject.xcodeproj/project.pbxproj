@@ -84,11 +84,11 @@
 		9138F4C42694D99600CA2E3F /* RickyAndMortyProject */ = {
 			isa = PBXGroup;
 			children = (
+				9138F4DA2694DB9F00CA2E3F /* Controller */,
+				9138F4DB2694DBC300CA2E3F /* View */,
+				9138F4E42694E5FA00CA2E3F /* Services */,
 				91D7453D269C89B0005D3EB2 /* Utils */,
 				9138F4E72694E64E00CA2E3F /* Model */,
-				9138F4E42694E5FA00CA2E3F /* Services */,
-				9138F4DB2694DBC300CA2E3F /* View */,
-				9138F4DA2694DB9F00CA2E3F /* Controller */,
 				9138F4D92694DB8700CA2E3F /* Application */,
 				9138F4CE2694D99700CA2E3F /* Assets.xcassets */,
 				9138F4D02694D99700CA2E3F /* LaunchScreen.storyboard */,

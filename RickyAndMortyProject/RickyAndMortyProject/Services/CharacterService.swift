@@ -46,4 +46,6 @@ class CharacterService {
             }
         }
     } //repare no t.type, ele pode ser de qualquer tipo MESMO, mas so vai chamar caso de sucesso
+    
+    
 }
