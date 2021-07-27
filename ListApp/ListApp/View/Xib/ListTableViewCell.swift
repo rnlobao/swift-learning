@@ -6,18 +6,20 @@
 //
 
 import UIKit
+import Nuke
 
-class ListTableViewCell: UITableViewCell {
+class CharacterTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    @IBOutlet weak var iconImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var specieLabel: UILabel!
     
+    
+    func setupCell(user: Characters) {
+        nameLabel.text = user.name ?? ""
+            specieLabel.text = user.species ?? ""
+            if let url = URL(string: user.image ?? "") {
+                Nuke.loadImage(with: ImageRequest(url: url), into: iconImageView)
+            }
+        }
 }

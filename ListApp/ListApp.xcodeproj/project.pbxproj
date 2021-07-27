@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,9 @@
 		9129385826AEFC5500B1BD1B /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9129385626AEFC5500B1BD1B /* ListTableViewCell.swift */; };
 		9129385926AEFC5500B1BD1B /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9129385726AEFC5500B1BD1B /* ListTableViewCell.xib */; };
 		9129385B26AF8DF500B1BD1B /* ListResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9129385A26AF8DF500B1BD1B /* ListResult.swift */; };
+		914F054926B036D70068A37E /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914F054826B036D70068A37E /* UIViewControllerExtension.swift */; };
+		914F054B26B037250068A37E /* ListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914F054A26B037250068A37E /* ListService.swift */; };
+		914F054D26B03BE10068A37E /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914F054C26B03BE10068A37E /* ListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		9129385626AEFC5500B1BD1B /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		9129385726AEFC5500B1BD1B /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 		9129385A26AF8DF500B1BD1B /* ListResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListResult.swift; sourceTree = "<group>"; };
+		914F054826B036D70068A37E /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		914F054A26B037250068A37E /* ListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListService.swift; sourceTree = "<group>"; };
+		914F054C26B03BE10068A37E /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		AAA0294A24239A17FAD4FDDB /* Pods-ListApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListApp.debug.xcconfig"; path = "Target Support Files/Pods-ListApp/Pods-ListApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DECAB39F790CB8208BA074D9 /* Pods-ListApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListApp.release.xcconfig"; path = "Target Support Files/Pods-ListApp/Pods-ListApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +108,7 @@
 		9129384F26AEFA2700B1BD1B /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				914F054A26B037250068A37E /* ListService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -109,6 +116,7 @@
 		9129385026AEFA2F00B1BD1B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				914F054826B036D70068A37E /* UIViewControllerExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -134,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				9129383E26AEF98000B1BD1B /* ListViewController.swift */,
+				914F054C26B03BE10068A37E /* ListViewModel.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -175,6 +184,7 @@
 				9129383326AEF97F00B1BD1B /* Sources */,
 				9129383426AEF97F00B1BD1B /* Frameworks */,
 				9129383526AEF97F00B1BD1B /* Resources */,
+				CA308BC0FB6C2CE4CB4DA526 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,6 +264,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CA308BC0FB6C2CE4CB4DA526 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ListApp/Pods-ListApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ListApp/Pods-ListApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ListApp/Pods-ListApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -262,9 +289,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9129383F26AEF98000B1BD1B /* ListViewController.swift in Sources */,
+				914F054B26B037250068A37E /* ListService.swift in Sources */,
 				9129385826AEFC5500B1BD1B /* ListTableViewCell.swift in Sources */,
+				914F054926B036D70068A37E /* UIViewControllerExtension.swift in Sources */,
 				9129385B26AF8DF500B1BD1B /* ListResult.swift in Sources */,
 				9129383B26AEF98000B1BD1B /* AppDelegate.swift in Sources */,
+				914F054D26B03BE10068A37E /* ListViewModel.swift in Sources */,
 				9129383D26AEF98000B1BD1B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
