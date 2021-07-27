@@ -7,7 +7,7 @@
 
 import Foundation
 
-class RickAndMortyViewModel  {
+class ListViewModel  {
     
     var service: ListService?
     var characters: [Characters] = []

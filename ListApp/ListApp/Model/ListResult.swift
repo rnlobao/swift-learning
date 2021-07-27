@@ -10,7 +10,7 @@ import Foundation
 // MARK: - CharacterResult
 struct ListResult: Codable {
     let info: Info?
-    let results: [Result]?
+    let results: [Characters]?
 }
 
 struct Info: Codable {
