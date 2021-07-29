@@ -23,6 +23,8 @@ class ListViewController: UIViewController {
         viewModel.getData()
     }
     
+    
+    
     func setupTableView() {
         //tableView.separatorStyle = .none
         tableView.delegate = self
