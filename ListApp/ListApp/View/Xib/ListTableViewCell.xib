@@ -50,8 +50,9 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="nameLabel" destination="rNz-Nu-gwr" id="re1-Cy-LuM"/>
-                <outlet property="specieLabel" destination="fvt-gG-o8F" id="Ojq-SR-Pyb"/>
+                <outlet property="avatarImage" destination="CdK-KS-uDh" id="u3M-rL-8gr"/>
+                <outlet property="emailLabel" destination="rNz-Nu-gwr" id="8lF-Vl-j1c"/>
+                <outlet property="firstNameLabel" destination="fvt-gG-o8F" id="eP4-JF-V4i"/>
             </connections>
             <point key="canvasLocation" x="18.840579710144929" y="157.70089285714286"/>
         </tableViewCell>

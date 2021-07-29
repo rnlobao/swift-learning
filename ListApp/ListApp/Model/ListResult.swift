@@ -9,23 +9,22 @@ import Foundation
 
 // MARK: - CharacterResult
 struct ListResult: Codable {
-    let info: Info?
-    let results: [Characters]?
+    let page, perPage, total, totalPages: Int?
+    let data: [Datum]?
+    let support: Support?
 }
 
-struct Info: Codable {
-    let count, pages: Int?
-    let next: String?
-    let prev: String?
-}
-
-// MARK: - Result
-struct Characters: Codable {
+// MARK: - Datum
+struct Datum: Codable {
     let id: Int?
-    let name: String?
-    let species: String?
-    let image: String?
+    let email, first_name, lastName: String?
+    let avatar: String?
+}
+
+// MARK: - Support
+struct Support: Codable {
     let url: String?
+    let text: String?
 }
 
 

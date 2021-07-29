@@ -7,10 +7,17 @@
 
 import Foundation
 
+protocol ListDelegate {
+    func getDataSucess()
+    func getDataFail(error: Error)
+    func showLoad()
+    func removeLoad()
+}
+
 class ListViewModel  {
     
     var service: ListService?
-    var characters: [Characters] = []
+    var users: [Datum] = []
     var delegate: ListDelegate?
     
     init(_ service: ListService? = ListService(), delegate: ListDelegate? = nil) {
@@ -21,12 +28,13 @@ class ListViewModel  {
     
     func getData() {
         delegate?.showLoad()
-        service?.getCharacters(sucess: { result in
-           
-            
+        service?.getUsers(sucess: { result in
+            self.users = result
+            self.delegate?.getDataSucess()
+            self.delegate?.removeLoad()
         }, error: { error in
-            
-            
+            self.delegate?.getDataFail(error: error)
+            self.delegate?.removeLoad()
         })
     }
     

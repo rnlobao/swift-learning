@@ -8,18 +8,17 @@
 import UIKit
 import Nuke
 
-class CharacterTableViewCell: UITableViewCell {
+class ListTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var iconImageView: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var specieLabel: UILabel!
+    @IBOutlet weak var avatarImage: UIImageView!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var firstNameLabel: UILabel!
     
-    
-    func setupCell(user: Characters) {
-        nameLabel.text = user.name ?? ""
-            specieLabel.text = user.species ?? ""
-            if let url = URL(string: user.image ?? "") {
-                Nuke.loadImage(with: ImageRequest(url: url), into: iconImageView)
-            }
+    func setupCell(user: Datum) {
+        firstNameLabel.text = user.first_name ?? ""
+        emailLabel.text = user.email ?? ""
+        if let url = URL(string: user.avatar ?? "") {
+            Nuke.loadImage(with: ImageRequest(url: url), into: avatarImage)
         }
+    }
 }
