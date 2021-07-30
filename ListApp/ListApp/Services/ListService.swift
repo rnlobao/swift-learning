@@ -24,9 +24,21 @@ class ListService {
         } error: { e in
             error(e)
         }
-    } //@escaping serve quando o request der resposta podemos retornar, funciona como uma funcao
-    //@escaping = return item so que espeerando a base de dados
-    //aqui da base de dados eu vou buscar apenas os caracteres, chamando a funcao request
+    }
+    
+    let parameters: [String:Any] = [
+        "name": "robson",
+        "job": "rnlobao42@gmail.com",
+    ]
+    
+    func postUsers(sucess: @escaping ([Datum])-> Void,error: @escaping (Error)-> Void) {
+        
+        request(url: "https://reqres.in/api/users", method: .post, params: parameters, obj: ListResult.self) { result in
+            sucess(result.data ?? [])
+        } error: { e in
+            error(e)
+        }
+    }
     
     func request<T: Codable>(url: String,method: HTTPMethod , params: [String:Any]? = nil, obj: T.Type, sucess: @escaping (T)-> Void, error: @escaping (Error)-> Void) {
         alamoFireManager?.request(url, method: method, parameters: params).responseJSON { response in
@@ -44,5 +56,13 @@ class ListService {
                 return
             }
         }
+        
+        
+        
+
     } //repare no t.type, ele pode ser de qualquer tipo MESMO, mas so vai chamar caso de sucesso
+    
+    func register<T: Codable>(url: String,method: HTTPMethod , params: [String:Any]? = nil, obj: T.Type, sucess: @escaping (T)-> Void, error: @escaping (Error)-> Void) {
+        
+    }
 }

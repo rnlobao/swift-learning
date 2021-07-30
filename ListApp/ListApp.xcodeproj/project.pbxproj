@@ -17,7 +17,7 @@
 		9129385826AEFC5500B1BD1B /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9129385626AEFC5500B1BD1B /* ListTableViewCell.swift */; };
 		9129385926AEFC5500B1BD1B /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9129385726AEFC5500B1BD1B /* ListTableViewCell.xib */; };
 		9129385B26AF8DF500B1BD1B /* ListResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9129385A26AF8DF500B1BD1B /* ListResult.swift */; };
-		9139D88826B2585F0068EFEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9139D88726B2585F0068EFEC /* ViewController.swift */; };
+		9139D88826B2585F0068EFEC /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9139D88726B2585F0068EFEC /* AddViewController.swift */; };
 		914F054926B036D70068A37E /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914F054826B036D70068A37E /* UIViewControllerExtension.swift */; };
 		914F054B26B037250068A37E /* ListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914F054A26B037250068A37E /* ListService.swift */; };
 		914F054D26B03BE10068A37E /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914F054C26B03BE10068A37E /* ListViewModel.swift */; };
@@ -36,7 +36,7 @@
 		9129385626AEFC5500B1BD1B /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		9129385726AEFC5500B1BD1B /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 		9129385A26AF8DF500B1BD1B /* ListResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListResult.swift; sourceTree = "<group>"; };
-		9139D88726B2585F0068EFEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9139D88726B2585F0068EFEC /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		914F054826B036D70068A37E /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		914F054A26B037250068A37E /* ListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListService.swift; sourceTree = "<group>"; };
 		914F054C26B03BE10068A37E /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 			children = (
 				914F054C26B03BE10068A37E /* ListViewModel.swift */,
 				9129383E26AEF98000B1BD1B /* ListViewController.swift */,
-				9139D88726B2585F0068EFEC /* ViewController.swift */,
+				9139D88726B2585F0068EFEC /* AddViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -294,7 +294,7 @@
 				9129383F26AEF98000B1BD1B /* ListViewController.swift in Sources */,
 				914F054B26B037250068A37E /* ListService.swift in Sources */,
 				9129385826AEFC5500B1BD1B /* ListTableViewCell.swift in Sources */,
-				9139D88826B2585F0068EFEC /* ViewController.swift in Sources */,
+				9139D88826B2585F0068EFEC /* AddViewController.swift in Sources */,
 				914F054926B036D70068A37E /* UIViewControllerExtension.swift in Sources */,
 				9129385B26AF8DF500B1BD1B /* ListResult.swift in Sources */,
 				9129383B26AEF98000B1BD1B /* AppDelegate.swift in Sources */,
