@@ -143,9 +143,9 @@
 		9129385326AEFA4600B1BD1B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				914F054C26B03BE10068A37E /* ListViewModel.swift */,
 				9129383E26AEF98000B1BD1B /* ListViewController.swift */,
 				9139D88726B2585F0068EFEC /* AddViewController.swift */,
+				914F054C26B03BE10068A37E /* ListViewModel.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

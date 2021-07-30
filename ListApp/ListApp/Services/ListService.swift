@@ -10,7 +10,6 @@ import Foundation
 import Alamofire
 
 class ListService {
-    
     private var alamoFireManager: Session? = {
         let configuration = URLSessionConfiguration.default
         configuration.requestCachePolicy = .reloadIgnoringCacheData
@@ -26,10 +25,6 @@ class ListService {
         }
     }
     
-    let parameters: [String:Any] = [
-        "name": "robson",
-        "job": "rnlobao42@gmail.com",
-    ]
     
     func postUsers(sucess: @escaping ([Datum])-> Void,error: @escaping (Error)-> Void) {
         

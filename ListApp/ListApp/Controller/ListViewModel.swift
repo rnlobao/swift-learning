@@ -38,4 +38,16 @@ class ListViewModel  {
         })
     }
     
+    func postData() {
+        delegate?.showLoad()
+        service?.postUsers(sucess: { result in
+            self.users = result
+            self.delegate?.getDataSucess()
+            self.delegate?.removeLoad()
+        }, error: { error in
+            self.delegate?.getDataFail(error: error)
+            self.delegate?.removeLoad()
+        })
+    }
+    
 }

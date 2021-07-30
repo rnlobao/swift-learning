@@ -9,7 +9,6 @@ import UIKit
 
 
 class AddViewController: UIViewController {
-    var service: ListViewModel?
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     
@@ -24,9 +23,13 @@ class AddViewController: UIViewController {
             return
         }
         
-        let user = (nome: nameAdded, email: emailAdded)
-        print("Nome: \(user.nome), Email: \(user.email)")
+        let parameters: [String:Any] = [
+            "name": nameAdded,
+            "job": emailAdded,
+        ]
         
+        
+                
         navigationController?.popViewController(animated: true)
     }
 }
