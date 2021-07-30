@@ -22,6 +22,8 @@
 		914F054B26B037250068A37E /* ListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914F054A26B037250068A37E /* ListService.swift */; };
 		914F054D26B03BE10068A37E /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914F054C26B03BE10068A37E /* ListViewModel.swift */; };
 		91DE819826B4322E0082D3ED /* AddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE819726B4322E0082D3ED /* AddViewModel.swift */; };
+		91E2474326B46F3500A3A127 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E2474226B46F3500A3A127 /* DetailViewController.swift */; };
+		91E2474526B46FAC00A3A127 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E2474426B46FAC00A3A127 /* Detail.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		914F054A26B037250068A37E /* ListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListService.swift; sourceTree = "<group>"; };
 		914F054C26B03BE10068A37E /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		91DE819726B4322E0082D3ED /* AddViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewModel.swift; sourceTree = "<group>"; };
+		91E2474226B46F3500A3A127 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		91E2474426B46FAC00A3A127 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		AAA0294A24239A17FAD4FDDB /* Pods-ListApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListApp.debug.xcconfig"; path = "Target Support Files/Pods-ListApp/Pods-ListApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DECAB39F790CB8208BA074D9 /* Pods-ListApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListApp.release.xcconfig"; path = "Target Support Files/Pods-ListApp/Pods-ListApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				9129383E26AEF98000B1BD1B /* ListViewController.swift */,
+				91E2474226B46F3500A3A127 /* DetailViewController.swift */,
 				9139D88726B2585F0068EFEC /* AddViewController.swift */,
 				914F054C26B03BE10068A37E /* ListViewModel.swift */,
 				91DE819726B4322E0082D3ED /* AddViewModel.swift */,
@@ -157,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				9129384026AEF98000B1BD1B /* Main.storyboard */,
+				91E2474426B46FAC00A3A127 /* Detail.storyboard */,
 			);
 			path = Stories;
 			sourceTree = "<group>";
@@ -241,6 +247,7 @@
 				9129384726AEF98000B1BD1B /* LaunchScreen.storyboard in Resources */,
 				9129385926AEFC5500B1BD1B /* ListTableViewCell.xib in Resources */,
 				9129384426AEF98000B1BD1B /* Assets.xcassets in Resources */,
+				91E2474526B46FAC00A3A127 /* Detail.storyboard in Resources */,
 				9129384226AEF98000B1BD1B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91E2474326B46F3500A3A127 /* DetailViewController.swift in Sources */,
 				9129383F26AEF98000B1BD1B /* ListViewController.swift in Sources */,
 				914F054B26B037250068A37E /* ListService.swift in Sources */,
 				9129385826AEFC5500B1BD1B /* ListTableViewCell.swift in Sources */,

@@ -51,6 +51,11 @@ extension ListViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true) //ao clicar acontece isso
+        //let detail = storyboard?.instantiateViewController(identifier: "DetailViewController") as? DetailViewController
+        if let detail = UIStoryboard(name: "Detail", bundle: .main).instantiateViewController(identifier: "DetailViewController") as? DetailViewController {
+            detail.modalPresentationStyle = .overFullScreen
+            present
+        }
         
     }
 }
