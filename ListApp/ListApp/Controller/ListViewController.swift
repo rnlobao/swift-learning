@@ -53,8 +53,12 @@ extension ListViewController: UITableViewDelegate,UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true) //ao clicar acontece isso
         //let detail = storyboard?.instantiateViewController(identifier: "DetailViewController") as? DetailViewController
         if let detail = UIStoryboard(name: "Detail", bundle: .main).instantiateViewController(identifier: "DetailViewController") as? DetailViewController {
-            detail.modalPresentationStyle = .overFullScreen
-            present
+            //detail.modalPresentationStyle = .overFullScreen
+            //present(detail, animated: true)
+            let backButton = UIBarButtonItem()
+                        backButton.title = "Voltar"
+                        navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+            navigationController?.pushViewController(detail, animated: true)
         }
         
     }

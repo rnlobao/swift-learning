@@ -14,7 +14,9 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var lastNameLabel: UILabel!
     @IBOutlet weak var firstNameLabel: UILabel!
     
-    func setupDetail(user: Datum) {
+    var users : Datum!
+    
+    func setupDetail() {
         firstNameLabel.text = user.first_name ?? ""
         emailLabel.text = user.email ?? ""
         lastNameLabel.text = user.last_name ?? ""
