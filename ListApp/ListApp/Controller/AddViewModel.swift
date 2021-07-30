@@ -1,35 +1,24 @@
 //
-//  ListViewModel.swift
+//  AddViewModel.swift
 //  ListApp
 //
-//  Created by Robson Novato Lobao on 27/07/21.
+//  Created by Robson Novato Lobao on 30/07/21.
 //
 
 import Foundation
 
-protocol ServiceDelegate {
-    func dataSucess()
-    func dataFail(error: Error)
-    func showLoad()
-    func removeLoad()
-}
-
-class ListViewModel  {
-    
+class AddViewModel {
     var service: ListService?
-    var users: [Datum] = []
     var delegate: ServiceDelegate?
-    
+
     init(_ service: ListService? = ListService(), delegate: ServiceDelegate? = nil) {
         self.service = service
         self.delegate = delegate
     }
     
-    
-    func getData() {
+    func postData(name: String, job: String) {
         delegate?.showLoad()
-        service?.getUsers(sucess: { result in
-            self.users = result
+        service?.postUsers(name: name, job: job, sucess: { result in
             self.delegate?.dataSucess()
             self.delegate?.removeLoad()
         }, error: { error in
@@ -37,4 +26,8 @@ class ListViewModel  {
             self.delegate?.removeLoad()
         })
     }
+    
+    
 }
+
+

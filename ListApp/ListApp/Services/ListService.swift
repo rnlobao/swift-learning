@@ -26,8 +26,11 @@ class ListService {
     }
     
     
-    func postUsers(sucess: @escaping ([Datum])-> Void,error: @escaping (Error)-> Void) {
-        
+    func postUsers(name: String, job: String, sucess: @escaping ([Datum])-> Void,error: @escaping (Error)-> Void) {
+        let parameters: [String:Any] = [
+            "name": name,
+            "job": job,
+        ]
         request(url: "https://reqres.in/api/users", method: .post, params: parameters, obj: ListResult.self) { result in
             sucess(result.data ?? [])
         } error: { e in

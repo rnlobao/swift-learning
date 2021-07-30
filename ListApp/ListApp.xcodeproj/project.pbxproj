@@ -21,6 +21,7 @@
 		914F054926B036D70068A37E /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914F054826B036D70068A37E /* UIViewControllerExtension.swift */; };
 		914F054B26B037250068A37E /* ListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914F054A26B037250068A37E /* ListService.swift */; };
 		914F054D26B03BE10068A37E /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914F054C26B03BE10068A37E /* ListViewModel.swift */; };
+		91DE819826B4322E0082D3ED /* AddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE819726B4322E0082D3ED /* AddViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		914F054826B036D70068A37E /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		914F054A26B037250068A37E /* ListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListService.swift; sourceTree = "<group>"; };
 		914F054C26B03BE10068A37E /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		91DE819726B4322E0082D3ED /* AddViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewModel.swift; sourceTree = "<group>"; };
 		AAA0294A24239A17FAD4FDDB /* Pods-ListApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListApp.debug.xcconfig"; path = "Target Support Files/Pods-ListApp/Pods-ListApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DECAB39F790CB8208BA074D9 /* Pods-ListApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListApp.release.xcconfig"; path = "Target Support Files/Pods-ListApp/Pods-ListApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +148,7 @@
 				9129383E26AEF98000B1BD1B /* ListViewController.swift */,
 				9139D88726B2585F0068EFEC /* AddViewController.swift */,
 				914F054C26B03BE10068A37E /* ListViewModel.swift */,
+				91DE819726B4322E0082D3ED /* AddViewModel.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				9129385B26AF8DF500B1BD1B /* ListResult.swift in Sources */,
 				9129383B26AEF98000B1BD1B /* AppDelegate.swift in Sources */,
 				914F054D26B03BE10068A37E /* ListViewModel.swift in Sources */,
+				91DE819826B4322E0082D3ED /* AddViewModel.swift in Sources */,
 				9129383D26AEF98000B1BD1B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

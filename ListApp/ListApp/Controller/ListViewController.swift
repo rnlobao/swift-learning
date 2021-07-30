@@ -51,16 +51,17 @@ extension ListViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true) //ao clicar acontece isso
+        
     }
 }
 
 
-extension ListViewController: ListDelegate {
-    func getDataSucess() {
+extension ListViewController: ServiceDelegate {
+    func dataSucess() {
         tableView.reloadData()
     }
     
-    func getDataFail(error: Error) {
+    func dataFail(error: Error) {
         let alert = UIAlertController(title: "Erro", message: error.localizedDescription, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .destructive, handler: nil))
         self.present(alert, animated: true)
@@ -73,7 +74,5 @@ extension ListViewController: ListDelegate {
     func removeLoad() {
         removeSpinner()
     }
-    
-    
 }
 
