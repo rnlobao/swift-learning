@@ -14,7 +14,7 @@ class ListTableViewCell: UITableViewCell {
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var firstNameLabel: UILabel!
     
-    func setupCell(user: Datum) {
+    func setupCell(user: Users) {
         firstNameLabel.text = user.first_name ?? ""
         emailLabel.text = user.email ?? ""
         if let url = URL(string: user.avatar ?? "") {

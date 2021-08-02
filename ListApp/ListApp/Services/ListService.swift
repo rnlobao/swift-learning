@@ -17,7 +17,7 @@ class ListService {
         return alamoFireManager
     }() //definir certas configuracoes, privado dentro do codigo
     
-    func getUsers(sucess: @escaping ([Datum])-> Void,error: @escaping (Error)-> Void) {
+    func getUsers(sucess: @escaping ([Users])-> Void,error: @escaping (Error)-> Void) {
         request(url: "https://reqres.in/api/users?page=2", method: .get, obj: ListResult.self) { result in
             sucess(result.data ?? [])
         } error: { e in
@@ -26,7 +26,7 @@ class ListService {
     }
     
     
-    func postUsers(name: String, job: String, sucess: @escaping ([Datum])-> Void,error: @escaping (Error)-> Void) {
+    func postUsers(name: String, job: String, sucess: @escaping ([Users])-> Void,error: @escaping (Error)-> Void) {
         let parameters: [String:Any] = [
             "name": name,
             "job": job,

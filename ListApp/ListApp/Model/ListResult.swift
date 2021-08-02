@@ -10,12 +10,12 @@ import Foundation
 // MARK: - CharacterResult
 struct ListResult: Codable {
     let page, perPage, total, totalPages: Int?
-    let data: [Datum]?
+    let data: [Users]?
     let support: Support?
 }
 
 // MARK: - Datum
-struct Datum: Codable {
+struct Users: Codable {
     let id: Int?
     let email, first_name, last_name: String?
     let avatar: String?

@@ -64,6 +64,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FaN-G8-WGS">
+                                <rect key="frame" x="147" y="208" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="T9l-GS-Geu"/>
+                                    <constraint firstAttribute="width" constant="120" id="b6u-vb-DTf"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -73,11 +80,13 @@
                             <constraint firstItem="Gbf-Pm-E6M" firstAttribute="leading" secondItem="6bY-NL-Zfg" secondAttribute="trailing" constant="16" id="5IA-pl-nzF"/>
                             <constraint firstItem="pil-gb-hPv" firstAttribute="centerY" secondItem="fnf-eL-ZPe" secondAttribute="centerY" id="BzZ-46-dmg"/>
                             <constraint firstItem="hDH-dG-GDM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="FPe-dz-pXC"/>
+                            <constraint firstItem="FaN-G8-WGS" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Fck-ZW-pT6"/>
                             <constraint firstItem="fnf-eL-ZPe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Jtk-Hu-fE6"/>
                             <constraint firstItem="fnf-eL-ZPe" firstAttribute="top" secondItem="bYx-KO-cNd" secondAttribute="bottom" constant="16" id="LIx-dM-VWB"/>
                             <constraint firstItem="pil-gb-hPv" firstAttribute="leading" secondItem="fnf-eL-ZPe" secondAttribute="trailing" constant="16" id="Ld4-Be-98P"/>
                             <constraint firstItem="i65-7L-rSg" firstAttribute="centerY" secondItem="hDH-dG-GDM" secondAttribute="centerY" id="Pj8-xd-qI8"/>
                             <constraint firstItem="bYx-KO-cNd" firstAttribute="top" secondItem="hDH-dG-GDM" secondAttribute="bottom" constant="16" id="Pmg-cL-qDn"/>
+                            <constraint firstItem="FaN-G8-WGS" firstAttribute="top" secondItem="6bY-NL-Zfg" secondAttribute="bottom" constant="16" id="TvQ-a7-SDH"/>
                             <constraint firstItem="hDH-dG-GDM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="Ub4-cL-j4L"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Gbf-Pm-E6M" secondAttribute="trailing" constant="16" id="WeZ-QQ-GzF"/>
                             <constraint firstItem="6bY-NL-Zfg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="bcS-zS-Tul"/>
@@ -91,6 +100,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="avatarImageView" destination="FaN-G8-WGS" id="Kuy-q6-6bZ"/>
                         <outlet property="emailLabel" destination="rdJ-bx-Bxi" id="345-3O-83p"/>
                         <outlet property="firstNameLabel" destination="Gbf-Pm-E6M" id="xLK-kK-euq"/>
                         <outlet property="idLabel" destination="i65-7L-rSg" id="x8g-qD-WBE"/>

@@ -17,7 +17,7 @@ protocol ServiceDelegate {
 class ListViewModel  {
     
     var service: ListService?
-    var users: [Datum] = []
+    var users: [Users] = []
     var delegate: ServiceDelegate?
     
     init(_ service: ListService? = ListService(), delegate: ServiceDelegate? = nil) {
