@@ -16,9 +16,15 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var firstNameLabel: UILabel!
     @IBOutlet weak var avatarImageView: UIImageView!
     
+    var user : Users!
+
+    
+    override func viewDidLoad() {
+        setupDetail()
+    }
     
     
-    func setupDetail(user: Users) {
+    func setupDetail() {
         idLabel.text = user.id?.description ?? ""
         emailLabel.text = user.email ?? ""
         firstNameLabel.text = user.first_name ?? ""

@@ -52,10 +52,10 @@ extension ListViewController: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true) 
         if let detail = UIStoryboard(name: "Detail", bundle: .main).instantiateViewController(identifier: "DetailViewController") as? DetailViewController {
-            detail.setupDetail(user: viewModel.users[indexPath.row])
+            detail.user = viewModel.users[indexPath.row]
             let backButton = UIBarButtonItem()
-                        backButton.title = "Voltar"
-                        navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+            backButton.title = "Voltar"
+            navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
             
             navigationController?.pushViewController(detail, animated: true)
         }

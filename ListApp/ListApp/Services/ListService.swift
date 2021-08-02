@@ -59,8 +59,5 @@ class ListService {
         
 
     } //repare no t.type, ele pode ser de qualquer tipo MESMO, mas so vai chamar caso de sucesso
-    
-    func register<T: Codable>(url: String,method: HTTPMethod , params: [String:Any]? = nil, obj: T.Type, sucess: @escaping (T)-> Void, error: @escaping (Error)-> Void) {
-        
-    }
+ 
 }
