@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		44C9EE02C287E69B760AD441 /* Pods_ListApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4090CC30661FE1E2D02363C3 /* Pods_ListApp.framework */; };
+		91023C4426BC4D7200994655 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91023C4326BC4D7200994655 /* SettingsViewController.swift */; };
 		9129383B26AEF98000B1BD1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9129383A26AEF98000B1BD1B /* AppDelegate.swift */; };
 		9129383D26AEF98000B1BD1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9129383C26AEF98000B1BD1B /* SceneDelegate.swift */; };
 		9129383F26AEF98000B1BD1B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9129383E26AEF98000B1BD1B /* ListViewController.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		4090CC30661FE1E2D02363C3 /* Pods_ListApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ListApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91023C4326BC4D7200994655 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		9129383726AEF98000B1BD1B /* ListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9129383A26AEF98000B1BD1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9129383C26AEF98000B1BD1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,9 +153,10 @@
 			children = (
 				9129383E26AEF98000B1BD1B /* ListViewController.swift */,
 				91E2474226B46F3500A3A127 /* DetailViewController.swift */,
+				9139D88726B2585F0068EFEC /* AddViewController.swift */,
+				91023C4326BC4D7200994655 /* SettingsViewController.swift */,
 				914F054C26B03BE10068A37E /* ListViewModel.swift */,
 				91DE819726B4322E0082D3ED /* AddViewModel.swift */,
-				9139D88726B2585F0068EFEC /* AddViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				914F054D26B03BE10068A37E /* ListViewModel.swift in Sources */,
 				91DE819826B4322E0082D3ED /* AddViewModel.swift in Sources */,
 				9129383D26AEF98000B1BD1B /* SceneDelegate.swift in Sources */,
+				91023C4426BC4D7200994655 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

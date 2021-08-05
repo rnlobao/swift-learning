@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -37,6 +38,7 @@
                     <connections>
                         <segue destination="pD6-QL-RZr" kind="relationship" relationship="viewControllers" id="u5X-lU-Lae"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ShA-l2-ckH"/>
+                        <segue destination="Ymq-m3-z8Z" kind="relationship" relationship="viewControllers" id="mcr-Q3-vkH"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pvv-pw-1kf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -76,6 +78,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-14" y="-1018"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="NaE-aF-GhU">
+            <objects>
+                <viewController id="Ymq-m3-z8Z" customClass="SettingsViewController" customModule="ListApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UxO-Gc-aYv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aQy-fI-GEr">
+                                <rect key="frame" x="182.5" y="148" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchColor:" destination="Ymq-m3-z8Z" eventType="valueChanged" id="fZm-uV-eli"/>
+                                </connections>
+                            </switch>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOc-Iw-GVO">
+                                <rect key="frame" x="16" y="104" width="120" height="120"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="NfV-WE-H1f"/>
+                                    <constraint firstAttribute="height" constant="120" id="Xi2-yB-KWS"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRI-Un-VFD">
+                                <rect key="frame" x="278" y="104" width="120" height="120"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="CM7-fL-WBL"/>
+                                    <constraint firstAttribute="height" constant="120" id="H4n-Lj-we0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xRd-n4-Cmf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xRd-n4-Cmf" firstAttribute="trailing" secondItem="DRI-Un-VFD" secondAttribute="trailing" constant="16" id="DV0-Yc-Z8C"/>
+                            <constraint firstItem="aQy-fI-GEr" firstAttribute="centerX" secondItem="UxO-Gc-aYv" secondAttribute="centerX" id="Gr5-GU-E0r"/>
+                            <constraint firstItem="DRI-Un-VFD" firstAttribute="top" secondItem="xRd-n4-Cmf" secondAttribute="top" constant="16" id="HT7-FD-pEa"/>
+                            <constraint firstItem="aQy-fI-GEr" firstAttribute="top" secondItem="xRd-n4-Cmf" secondAttribute="top" constant="60" id="Su1-Jo-4IT"/>
+                            <constraint firstItem="mOc-Iw-GVO" firstAttribute="leading" secondItem="xRd-n4-Cmf" secondAttribute="leading" constant="16" id="VI9-ga-5Wg"/>
+                            <constraint firstItem="mOc-Iw-GVO" firstAttribute="top" secondItem="xRd-n4-Cmf" secondAttribute="top" constant="16" id="bHs-YR-nna"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="E3X-nu-jOs"/>
+                    <connections>
+                        <outlet property="switchButton" destination="aQy-fI-GEr" id="mD8-5I-xCg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fg4-f2-XDR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-928.98550724637687" y="-6.0267857142857144"/>
         </scene>
         <!--Registrar-->
         <scene sceneID="0Zp-vS-ZYH">
@@ -144,11 +198,21 @@
             <point key="canvasLocation" x="-42" y="-341"/>
         </scene>
     </scenes>
+    <color key="tintColor" name="AccentColor"/>
     <resources>
         <image name="book.fill" catalog="system" width="128" height="102"/>
         <image name="doc.text" catalog="system" width="115" height="128"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
