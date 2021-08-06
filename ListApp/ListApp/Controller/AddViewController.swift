@@ -10,6 +10,8 @@ import UIKit
 
 class AddViewController: UIViewController {
     
+    var viewModel : ListViewModel!
+    
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -19,21 +21,14 @@ class AddViewController: UIViewController {
     var addViewModel: AddViewModel?
     
     override func viewWillAppear(_ animated: Bool) {
-        backgroundColor()
+        viewModel.backgroundColor()
     }
     override func viewDidLoad() {
         addViewModel = AddViewModel(delegate: self)
+        viewModel = ListViewModel(delegate: self)
     }
     
-    func backgroundColor() {
-        let userDefault = UserDefaults.standard
-        let color = userDefault.string(forKey: "color")
-        if color == "red" {
-            view.backgroundColor = UIColor.red
-            return
-        }
-        view.backgroundColor = UIColor.green
-    }
+    
     
     
     
