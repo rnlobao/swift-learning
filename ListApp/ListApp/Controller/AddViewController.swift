@@ -9,25 +9,22 @@ import UIKit
 
 
 class AddViewController: UIViewController {
-    
-    var viewModel : ListViewModel!
-    
-    
+        
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     
     var usersList: ListViewController?
     var result: ListResult?
     var addViewModel: AddViewModel?
+    var viewModel : ListViewModel!
     
-    override func viewWillAppear(_ animated: Bool) {
-        viewModel.backgroundColor()
-    }
+    //override func viewWillAppear(_ animated: Bool) {
+    //    viewModel.backgroundColor()
+    //}
     override func viewDidLoad() {
         addViewModel = AddViewModel(delegate: self)
         viewModel = ListViewModel(delegate: self)
     }
-    
     
     
     

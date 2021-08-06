@@ -3,7 +3,7 @@
 //  ListApp
 //
 //  Created by Robson Novato Lobao on 26/07/21.
-//
+// Fazer a detail e a add receber a funcao da viewModel
 
 import UIKit
 
