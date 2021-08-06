@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol ServiceDelegate {
     func dataSucess()
@@ -19,12 +20,24 @@ class ListViewModel  {
     var service: ListService?
     var users: [Users] = []
     var delegate: ServiceDelegate?
+    var myColor: UIColor = UIColor.red
     
     init(_ service: ListService? = ListService(), delegate: ServiceDelegate? = nil) {
         self.service = service
         self.delegate = delegate
     }
     
+    func backgroundColor() {
+        let userDefault = UserDefaults.standard
+        let color = userDefault.string(forKey: "color")
+        if color == "red" {
+            myColor = UIColor.red
+            delegate?.dataSucess()
+            return
+        }
+        myColor = UIColor.green
+        delegate?.dataSucess()
+    }
     
     func getData() {
         delegate?.showLoad()

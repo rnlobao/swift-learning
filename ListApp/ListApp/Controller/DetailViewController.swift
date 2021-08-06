@@ -17,12 +17,24 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var avatarImageView: UIImageView!
     
     var user : Users!
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        backgroundColor()
+    }
     
     override func viewDidLoad() {
         setupDetail()
     }
     
+    func backgroundColor() {
+        let userDefault = UserDefaults.standard
+        let color = userDefault.string(forKey: "color")
+        if color == "red" {
+            view.backgroundColor = UIColor.red
+            return
+        }
+        view.backgroundColor = UIColor.green
+    }
     
     func setupDetail() {
         idLabel.text = user.id?.description ?? ""

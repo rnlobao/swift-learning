@@ -16,11 +16,15 @@ class ListViewController: UIViewController {
     
     var viewModel : ListViewModel!
     
+    override func viewWillAppear(_ animated: Bool) {
+        viewModel.backgroundColor()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel = ListViewModel(delegate: self)
-        setupTableView()
         viewModel.getData()
+        setupTableView()
     }
     
     
@@ -41,7 +45,7 @@ extension ListViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellReuse) as! ListTableViewCell
-        cell.setupCell(user: viewModel.users[indexPath.row])
+        cell.setupCell(user: viewModel.users[indexPath.row], color: viewModel.myColor)
         return cell
     }
     
@@ -67,6 +71,7 @@ extension ListViewController: UITableViewDelegate,UITableViewDataSource {
 extension ListViewController: ServiceDelegate {
     func dataSucess() {
         tableView.reloadData()
+        tableView.backgroundColor = viewModel.myColor
     }
     
     func dataFail(error: Error) {
