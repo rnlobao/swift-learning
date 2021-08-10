@@ -17,23 +17,16 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var avatarImageView: UIImageView!
     
     var user : Users!
+    var addViewModel: AddViewModel!
     
     override func viewWillAppear(_ animated: Bool) {
-        backgroundColor()
+        addViewModel?.backgroundColor()
+        self.view.backgroundColor = addViewModel?.myColor
     }
     
     override func viewDidLoad() {
         setupDetail()
-    }
-    
-    func backgroundColor() {
-        let userDefault = UserDefaults.standard
-        let color = userDefault.string(forKey: "color")
-        if color == "red" {
-            view.backgroundColor = UIColor.red
-            return
-        }
-        view.backgroundColor = UIColor.green
+        addViewModel = AddViewModel()
     }
     
     func setupDetail() {

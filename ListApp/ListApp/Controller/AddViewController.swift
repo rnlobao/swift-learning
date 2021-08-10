@@ -16,17 +16,15 @@ class AddViewController: UIViewController {
     var usersList: ListViewController?
     var result: ListResult?
     var addViewModel: AddViewModel?
-    var viewModel : ListViewModel!
     
-    //override func viewWillAppear(_ animated: Bool) {
-    //    viewModel.backgroundColor()
-    //}
-    override func viewDidLoad() {
-        addViewModel = AddViewModel(delegate: self)
-        viewModel = ListViewModel(delegate: self)
+    override func viewWillAppear(_ animated: Bool) {
+        addViewModel?.backgroundColor()
+        self.view.backgroundColor = addViewModel?.myColor
     }
     
-    
+    override func viewDidLoad() {
+        addViewModel = AddViewModel(delegate: self)
+    }
     
     
     @IBAction func saveButton(_ sender: Any) {
