@@ -153,10 +153,10 @@
 			children = (
 				9129383E26AEF98000B1BD1B /* ListViewController.swift */,
 				9139D88726B2585F0068EFEC /* AddViewController.swift */,
+				91DE819726B4322E0082D3ED /* AddViewModel.swift */,
 				91E2474226B46F3500A3A127 /* DetailViewController.swift */,
 				91023C4326BC4D7200994655 /* SettingsViewController.swift */,
 				914F054C26B03BE10068A37E /* ListViewModel.swift */,
-				91DE819726B4322E0082D3ED /* AddViewModel.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
